@@ -1,7 +1,9 @@
 package com.ebs.lojavirtual
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.ebs.lojavirtual.Form.FormLogin
 import com.heinrichreimersoftware.materialintro.app.IntroActivity
 import com.heinrichreimersoftware.materialintro.slide.SimpleSlide
 
@@ -28,8 +30,17 @@ class Slides : IntroActivity() {
                 .background(R.color.AV)
                 .title("Crie uma conta gratis")
                 .description("Cadastre agora mesmo e confira nossos produtos")
+                .canGoBackward(false) // Evita que volte para o slide anterior
                 .build()
         )
+    }
 
+    // Quando passar o ultimo slide, caira aqui e destruira os slides e irá abri
+    // a activity de loguin finalizando as demais
+    override fun onDestroy() {
+        super.onDestroy()
+        var intent = Intent(this, FormLogin::class.java)
+        startActivity(intent)
+        finish()
     }
 }
