@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/shape_degrade"
+    tools:context=".Form.FormCadastro">
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/shape_edit_text"
+        android:hint="E-mail"
+        android:padding="15dp"
+        android:textColorHint="@color/Preto"
+        android:inputType="textEmailAddress"
+        android:drawableRight="@drawable/ic_email"/>
+
+    <EditText
+        android:id="@+id/edit_senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/shape_edit_text"
+        android:hint="Senha"
+        android:padding="15dp"
+        android:textColorHint="@color/Preto"
+        android:inputType="textPassword"
+        android:drawableRight="@drawable/ic_vpn_key"/>
+
+    <Button
+        android:id="@+id/bt_cadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="15dp"
+        android:text="CADASTRAR"
+        android:textColor="@color/Branco"
+        android:background="@drawable/shape_button"/>
+
+</LinearLayout>
