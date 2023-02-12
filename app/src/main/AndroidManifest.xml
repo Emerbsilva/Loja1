@@ -13,6 +13,11 @@
         android:theme="@style/Theme.LojaVirtual"
         tools:targetApi="31">
         <activity
+            android:name=".TelaPrincipal"
+            android:exported="false"
+            android:label="@string/title_activity_tela_principal"
+            android:theme="@style/Theme.LojaVirtual.NoActionBar" />
+        <activity
             android:name=".Form.FormLogin"
             android:exported="false" />
         <activity

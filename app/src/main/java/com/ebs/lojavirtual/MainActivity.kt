@@ -8,6 +8,8 @@ import androidx.core.content.ContextCompat.startActivity
 import com.ebs.lojavirtual.Form.FormLogin
 import com.ebs.lojavirtual.databinding.ActivityFormLoginBinding
 import com.ebs.lojavirtual.databinding.ActivityMainBinding
+import com.google.firebase.FirebaseApp
+import com.google.firebase.ktx.Firebase
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,5 +24,6 @@ class MainActivity : AppCompatActivity() {
             //var intent = Intent(this, formLogin::class.java)
             startActivity(intent)
         }
+
     }
 }

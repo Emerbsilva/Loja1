@@ -6,5 +6,4 @@
         android:startColor="@color/AV"
         android:endColor="@color/Roxo"
         android:angle="90"/>
-
 </shape>
